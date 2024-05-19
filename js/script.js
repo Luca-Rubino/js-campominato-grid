@@ -13,3 +13,14 @@ h1.textContent='Js-campominato-grid'
 
 const sectionSecondo = document.createElement('section')// creazione sezione per inserire i quadrati numerati
 sectionSecondo.classList.add('griglia')// aggiungo classe griglia per la personalizzazione con il file css
+
+let elQuadrato
+
+// ciclo per creare i quadrati da 1 a 100
+for (let i = 0; i < 100; i++){
+    bodySelector.appendChild(sectionSecondo)
+    elQuadrato = document.createElement('article')
+    elQuadrato.classList.add('quadrato')
+    sectionSecondo.appendChild(elQuadrato)
+    elQuadrato.append(i+1)
+}
