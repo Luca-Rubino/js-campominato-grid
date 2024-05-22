@@ -3,12 +3,35 @@ body{
     color: white;
 }
 
+h1{
+    text-align: center;
+}
+
+body > section:nth-child(3){
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+body > section:first-of-type{
+    display: flex;
+    justify-content: center;
+}
+
+#modalità-di-gioco{
+    margin-right: 1rem;
+}
+
+button{
+    padding: 1rem 2rem;
+}
+
 .griglia{
     display: flex;
     flex-wrap: wrap;
     width: 91.25rem;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .quadrato{
@@ -18,4 +41,8 @@ body{
     padding: 3rem;
     width: 3rem;
     text-align: center;
+}
+
+.bk-celeste{
+    background-color: blue;
 }
