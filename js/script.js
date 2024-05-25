@@ -11,6 +11,7 @@ sectionSecondo.classList.add('griglia');// aggiungo classe griglia per la person
 bodySelector.appendChild(sectionSecondo);// inserisco nel body la sezione dei quadrati
 
 buttonPlay.addEventListener("click", () => {
+    sectionSecondo.innerHTML = '';// imposto la rigenerazione della griglia ad ogni click del bottone play
     // ciclo per creare i quadrati da 1 a 100
     i = 0;
     while (i < 100){
@@ -22,10 +23,7 @@ buttonPlay.addEventListener("click", () => {
         function sfondoCeleste() {
             elQuadrato.classList.add('bk-celeste')
             // elQuadrato.append(i)// inserisco in ogni singolo article il valore numerico
-        };  
+        }; 
         i++
     };
 });
-
-    // sectionSecondo.innerHTML = '';
-
