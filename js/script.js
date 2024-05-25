@@ -20,6 +20,7 @@ bodySelector.appendChild(sectionSecondo);// inserisco nel body la sezione dei qu
 
 // funzione che genera la griglia richiesta
 buttonPlay.addEventListener("click", () => {
+    sectionSecondo.innerHTML = '';// imposto la rigenerazione della griglia ad ogni click del bottone play
     const livello = modalitaDiGioco.value; // costante per richiamare i value dei tag option per le difficolta
     console.log(livello);
     // uso l'espressione switch per impostare la generazione delle celle in base alla difficoltà selezionata 
@@ -39,3 +40,16 @@ buttonPlay.addEventListener("click", () => {
     console.log(numCelle);
     console.log(larghezzaRem);
 });
+
+// funzione per creare quadrati e numeri all'interno
+function generazioneQuadrati (num, width) {
+    //  generare classe e dimensioni dei quadratini
+    quadrato = document.createElement('article');// creo l'elemento article che sarà il quadrato numerato
+    sectionSecondo.appendChild(quadrato);// aggiungo come figli di section i vari article
+    quadrato.classList.add('quadrato');// aggiungo la classe per la personalizzazione con il file css
+    quadrato.style.width = `${width}rem`;// aggiungo all'elemento quadrato tramite il .style un width che avra valore variabile a seconda del valore larghezzaRem presente nell'espressione switch
+    quadrato.querySelector('article');
+    // crea un numero da inserire nel nodo precedente e chiudiamo la funzione
+    quadrato.append(num);
+     return quadrato;
+};
