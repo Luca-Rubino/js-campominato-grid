@@ -37,19 +37,22 @@ button{
 .griglia{
     display: flex;
     flex-wrap: wrap;
-    width: 62rem;
+    height: 37rem;
+    width: 37rem;
     margin: 0 auto;
 }
 
 .quadrato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: tomato;
     color: white;
     border: 1px solid black;
-    padding: 2rem;
-    width: calc(100% / 30);
     text-align: center;
 }
 
 .bk-celeste{
     background-color: cyan;
+    color: black;
 }
