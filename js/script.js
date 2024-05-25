@@ -39,6 +39,15 @@ buttonPlay.addEventListener("click", () => {
     }
     console.log(numCelle);
     console.log(larghezzaRem);
+    // creo ciclo per creare i quadrati in base alla difficolta selezionata
+    i = 1;
+    while (i <= numCelle){
+        const quadrati = generazioneQuadrati (i, larghezzaRem);
+        quadrati.addEventListener("click", () => {
+            quadrati.classList.add('bk-celeste');
+        });
+        i++
+    };
 });
 
 // funzione per creare quadrati e numeri all'interno
